@@ -1,0 +1,4 @@
+split,Accuracy,Balanced accuracy,Crack precision,Crack recall,Crack F1,Specificity,ROC AUC,Average precision (AP),Log loss,TP,TN,FP,FN
+train,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.00039423915602116696,70.0,315.0,0.0,0.0
+valid,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9999999999999998,0.001652496110480935,14.0,105.0,0.0,0.0
+test,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0006406366498670766,8.0,32.0,0.0,0.0

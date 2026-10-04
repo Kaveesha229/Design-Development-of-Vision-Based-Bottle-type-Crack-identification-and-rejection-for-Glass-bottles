@@ -1,0 +1,33 @@
+{
+  "class_labels": {
+    "good": 0,
+    "crack": 1
+  },
+  "image_size": [
+    128,
+    128
+  ],
+  "hog_settings": {
+    "orientations": 9,
+    "pixels_per_cell": [
+      8,
+      8
+    ],
+    "cells_per_block": [
+      2,
+      2
+    ],
+    "block_norm": "L2-Hys",
+    "transform_sqrt": true,
+    "feature_vector": true
+  },
+  "preprocessing": "EXIF orientation correction, grayscale, Lanczos resize to 128x128, float pixels divided by 255",
+  "threshold": 0.4,
+  "selected_settings": {
+    "C": 0.01,
+    "class_weight": null
+  },
+  "random_seed": 42,
+  "sklearn_version": "1.6.1",
+  "skimage_version": "0.25.2"
+}

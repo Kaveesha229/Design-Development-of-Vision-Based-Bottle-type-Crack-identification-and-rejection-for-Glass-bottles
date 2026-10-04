@@ -1,0 +1,36 @@
+{
+  "class_labels": {
+    "good": 0,
+    "crack": 1
+  },
+  "image_size": [
+    128,
+    128
+  ],
+  "hog_settings": {
+    "orientations": 9,
+    "pixels_per_cell": [
+      8,
+      8
+    ],
+    "cells_per_block": [
+      2,
+      2
+    ],
+    "block_norm": "L2-Hys",
+    "transform_sqrt": true,
+    "feature_vector": true
+  },
+  "preprocessing": "EXIF correction, grayscale, Lanczos resize to 128x128, float pixels divided by 255",
+  "threshold": 0.29000000000000004,
+  "selected_settings": {
+    "n_estimators": 200,
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "class_weight": "balanced"
+  },
+  "random_seed": 42,
+  "sklearn_version": "1.6.1",
+  "skimage_version": "0.25.2"
+}
