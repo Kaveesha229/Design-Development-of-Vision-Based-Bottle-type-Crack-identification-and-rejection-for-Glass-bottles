@@ -13,10 +13,10 @@ Final year project work on automated glass bottle inspection. This repository cu
 <tr><td><a href="notebooks/LogisticRegression.ipynb">notebooks/LogisticRegression.ipynb</a></td><td>Readable notebook copy for the Logistic Regression experiment</td></tr>
 <tr><td><a href="notebooks/RandomForest.ipynb">notebooks/RandomForest.ipynb</a></td><td>Readable notebook copy for the Random Forest experiment</td></tr>
 <tr><td><a href="notebooks/ResNet18.ipynb">notebooks/ResNet18.ipynb</a></td><td>Readable notebook copy for the ResNet18 experiment</td></tr>
-<tr><td><a href="hog%20%2B%20logistic%20regression/20261003_153422">hog + logistic regression/20261003_153422</a></td><td>Saved Logistic Regression run</td></tr>
-<tr><td><a href="hog%20%2B%20random%20forest/20261003_155012">hog + random forest/20261003_155012</a></td><td>Saved Random Forest run</td></tr>
-<tr><td><a href="resnet18/20261003_155746">resnet18/20261003_155746</a></td><td>Saved ResNet18 run</td></tr>
-<tr><td><a href="test">test</a></td><td>Included test image patches</td></tr>
+<tr><td><a href="https://github.com/Kaveesha229/Design%2DDevelopment%2Dof%2DVision%2DBased%2DBottle%2Dtype%2DCrack%2Didentification%2Dand%2Drejection%2Dfor%2DGlass%2Dbottles/tree/main/hog%20%2B%20logistic%20regression/20261003_153422">hog + logistic regression/20261003_153422</a></td><td>Saved Logistic Regression run</td></tr>
+<tr><td><a href="https://github.com/Kaveesha229/Design%2DDevelopment%2Dof%2DVision%2DBased%2DBottle%2Dtype%2DCrack%2Didentification%2Dand%2Drejection%2Dfor%2DGlass%2Dbottles/tree/main/hog%20%2B%20random%20forest/20261003_155012">hog + random forest/20261003_155012</a></td><td>Saved Random Forest run</td></tr>
+<tr><td><a href="https://github.com/Kaveesha229/Design%2DDevelopment%2Dof%2DVision%2DBased%2DBottle%2Dtype%2DCrack%2Didentification%2Dand%2Drejection%2Dfor%2DGlass%2Dbottles/tree/main/resnet18/20261003_155746">resnet18/20261003_155746</a></td><td>Saved ResNet18 run</td></tr>
+<tr><td><a href="https://github.com/Kaveesha229/Design%2DDevelopment%2Dof%2DVision%2DBased%2DBottle%2Dtype%2DCrack%2Didentification%2Dand%2Drejection%2Dfor%2DGlass%2Dbottles/tree/main/test">test</a></td><td>Included test image patches</td></tr>
 </table>
 
 ## Current scope
