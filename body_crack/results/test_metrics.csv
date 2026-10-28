@@ -1,0 +1,5 @@
+model,run_id,test_good,test_crack,accuracy,balanced_accuracy,crack_precision,crack_recall,crack_f1,roc_auc,average_precision,tp,tn,fp,fn,mean_patch_pipeline_ms,model_size_mb,source_report,source_page
+HOG with Logistic Regression,20261003_153422,32,8,0.95,0.9218999999999999,0.875,0.875,0.8750,0.9922,0.9705,7,31,1,1,10.37,0.25,../reports/HOG_Logistic_Regression_Report.pdf,2
+HOG with SVM,20261003_154339,32,8,0.95,0.9218999999999999,0.875,0.875,0.8750,0.9922,0.9705,7,31,1,1,19.7,8.6,../reports/HOG_SVM_Report.pdf,2
+HOG with Random Forest,20261003_155012,32,8,0.9,0.8438,0.75,0.75,0.7500,0.9727,0.8979,6,30,2,2,57.77,0.61,../reports/HOG_Random_Forest_Report.pdf,2
+ResNet18,20261003_155746,32,8,1,1,1,1,1.0000,1.0000,1.0000,8,32,0,0,10.52,42.71,../reports/ResNet18_Report.pdf,2

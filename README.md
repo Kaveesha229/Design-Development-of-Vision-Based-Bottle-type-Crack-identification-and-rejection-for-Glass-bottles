@@ -6,6 +6,22 @@
 
 Final year project work on automated glass bottle inspection. This repository currently documents image patch classification into good and crack classes, with training notebooks, saved experiment outputs and test samples.
 
+## Body crack evaluation
+
+Four model reports are now collected in the body crack section, including HOG with SVM. The collection follows the project owner's identification of the uploaded reports and preserves their original run identifiers.
+
+<p><a href="body_crack/README.md"><strong>Explore body crack results and reports</strong></a> &nbsp; | &nbsp; <a href="body_crack/results/test_metrics.csv">Download test metrics CSV</a></p>
+
+<table>
+<tr><th>Model</th><th>Test accuracy</th><th>Crack precision</th><th>Crack recall</th><th>Crack F1</th></tr>
+<tr><td>HOG with Logistic Regression</td><td>95.00%</td><td>87.50%</td><td>87.50%</td><td>0.8750</td></tr>
+<tr><td>HOG with SVM</td><td>95.00%</td><td>87.50%</td><td>87.50%</td><td>0.8750</td></tr>
+<tr><td>HOG with Random Forest</td><td>90.00%</td><td>75.00%</td><td>75.00%</td><td>0.7500</td></tr>
+<tr><td>ResNet18</td><td>100.00%</td><td>100.00%</td><td>100.00%</td><td>1.0000</td></tr>
+</table>
+
+Results are taken from the supplied reports, each evaluated on 40 test patches comprising 32 good and 8 crack patches. These are patch classification results, not whole bottle inspection accuracy. The update adds report evidence rather than a new training run.
+
 ## Repository guide
 
 <table>
@@ -21,24 +37,17 @@ Final year project work on automated glass bottle inspection. This repository cu
 
 ## Current scope
 
-The available experiments use HOG with Logistic Regression, HOG with Random Forest, and ResNet18. An SVM experiment is not present in the current tree. Bottle type recognition, conveyor integration and physical rejection are broader project goals rather than demonstrated capabilities of these classification files.
+The repository contains notebooks and saved outputs for HOG with Logistic Regression, HOG with Random Forest and ResNet18. A HOG with SVM evaluation report is now available under `body_crack`; its source notebook and trained model have not been supplied. Bottle type recognition, conveyor integration and physical rejection are broader project goals rather than demonstrated capabilities of these classification files.
 
 ## Processing approach
 
 The HOG experiments resize grayscale patches to 128 by 128 pixels before feature extraction and classification. ResNet18 uses RGB patches resized to 224 by 224 pixels. Both classes are mapped consistently: `good` is 0 and `crack` is 1.
 
-## Recorded test results
+## Reading the results
 
-<table>
-<tr><th>Model</th><th>Accuracy</th><th>Crack precision</th><th>Crack recall</th><th>Crack F1</th></tr>
-<tr><td>HOG with Logistic Regression</td><td>95.0%</td><td>87.5%</td><td>87.5%</td><td>0.875</td></tr>
-<tr><td>HOG with Random Forest</td><td>90.0%</td><td>75.0%</td><td>75.0%</td><td>0.750</td></tr>
-<tr><td>ResNet18</td><td>100.0%</td><td>100.0%</td><td>100.0%</td><td>1.000</td></tr>
-</table>
+The <a href="body_crack/README.md">body crack evaluation</a> provides all four model results, confusion counts, model configurations, runtime context and links to the original reports. The existing experiment folders remain available as the original records. Logistic Regression and Random Forest reports in the new collection are byte identical to the existing PDFs.
 
-## Interpreting the results
-
-These values are transcribed from the saved `metrics.csv` files, not from a new training run. Each recorded test split contains 40 patches: 8 crack and 32 good. The recorded training and validation counts are 385 and 119 respectively. A perfect score on this small test split does not establish performance on unseen production bottles. Additional evaluation should separate physical bottles and capture sessions across splits.
+The recorded training and validation counts are 385 and 119 respectively. Exact image duplicate checks do not verify physical bottle separation. A perfect score on 40 test patches does not establish performance on unseen production bottles.
 
 ## Getting started
 
@@ -59,7 +68,7 @@ The notebooks use Python, NumPy, pandas, Pillow, Matplotlib, joblib, scikit lear
 
 ## Next engineering steps
 
-Expand evaluation across bottle types and lighting conditions, measure inference latency, and document the connection between classification output and physical rejection. Add individual project responsibilities and hardware results from the original records.
+Expand evaluation across bottle types and lighting conditions, verify inference latency on the deployment hardware, and document the connection between classification output and physical rejection. Add individual project responsibilities and hardware results from the original records.
 
 ## Project media
 
